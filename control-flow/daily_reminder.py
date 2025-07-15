@@ -22,19 +22,25 @@ else:
 '''
 
 
-match priority, time_bound:
-    case "high", "yes":
-        print(f"Reminder: {task} is a {priority} priority task that requires immerdiate attention today!")
-    case "high", "no":
-        print(f"Reminder: {task} is a {priority} priority with a flexible schedule. Plan carefully.")
-    case "medium", "yes":
-        print(f"Reminder: {task} is a {priority} priority tasl that requires high attention.")
-    case "medium", "no":
-        print(f"Reminder: {task} is a {priority} priority with a flexible schedule.")
-    case "low", "yes":
-        print(f"Reminder: {task} is a {priority} priority but has a deadline.")
-    case "low", "no":
-        print(f"Note: {task} is a {priority} priority task. Consider completing it when you have free time.")
+match priority:
+    case "high":
+        if time_bound == "yes":
+            print(f"Reminder: {task} is a {priority} priority task that requires immerdiate attention today!")
+    case "high":
+        if time_bound == "no":
+            print(f"Reminder: {task} is a {priority} priority with a flexible schedule. Plan carefully.")
+    case "medium":
+        if time_bound == "yes":
+            print(f"Reminder: {task} is a {priority} priority tasl that requires high attention.")
+    case "medium":
+        if time_bound == "no":
+            print(f"Reminder: {task} is a {priority} priority with a flexible schedule.")
+    case "low":
+        if time_bound == "yes":
+            print(f"Reminder: {task} is a {priority} priority but has a deadline.")
+    case "low":
+        if time_bound == "no":
+            print(f"Note: {task} is a {priority} priority task. Consider completing it when you have free time.")
     case _:
         print("Invalid input!!!")
     
