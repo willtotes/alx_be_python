@@ -25,13 +25,13 @@ else:
 match priority:
     case "high":
         if time_bound == "yes":
-            print(f"Reminder: {task} is a {priority} priority task that requires immerdiate attention today!")
+            print(f"Reminder: {task} is a {priority} priority task that requires immediate attention today!")
     case "high":
         if time_bound == "no":
             print(f"Reminder: {task} is a {priority} priority with a flexible schedule. Plan carefully.")
     case "medium":
         if time_bound == "yes":
-            print(f"Reminder: {task} is a {priority} priority tasl that requires high attention.")
+            print(f"Reminder: {task} is a {priority} priority task that requires high attention.")
     case "medium":
         if time_bound == "no":
             print(f"Reminder: {task} is a {priority} priority with a flexible schedule.")
