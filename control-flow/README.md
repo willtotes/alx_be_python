@@ -41,8 +41,8 @@ This project is part of my journey learning Python through the ALX Backend Engin
 - `weather_advice.py` — basic `if/elif/else` logic
 - `match_case_calculator.py` — using match/case for a simple calculator
 - `pattern_drawing.py` — used nested loops to draw patterns
-- `for_loop_examples.py` — explored different sequences
-- `while_loop_examples.py` — practiced condition-based repetition
+- `multiplication_table.py` — used loops to generate print of multiplication table
+- `daily_reminder.py` — used conditional statements, Match Case, and loops
 
 ---
 
