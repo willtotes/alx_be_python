@@ -19,9 +19,16 @@ def main():
             print(f"{item}, added to the list")
             pass
         elif choice == "2":
-            item = input("Remove Item: ")
-            shopping_list.remove(item)
-            print(f"{item}, has been removed!")
+            if not shopping_list:
+                print("The list is empty.")
+            else:
+                print(f"Current list: {shopping_list}")
+                item = input("Remove Item: ")
+                if item in shopping_list:
+                    shopping_list.remove(item)
+                    print(f"{item} has been removed!")
+                else:
+                    print(f"{item} is not found!")
             pass
         elif choice == "3":
             item = input("View List: ")
