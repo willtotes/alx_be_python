@@ -1,13 +1,14 @@
 def perform_operation(num1: float, num2: float, operation: str):
     if operation == "add".lower():
-        print(num1 + num2)
+        return num1 + num2
     elif operation == "subtract".lower():
-        print(num1 - num2)
+        return num1 - num2
     elif operation == "multiply".lower():
-        print(num1 * num2)
+        return num1 * num2
     elif operation == "divide".lower():
-        print(num1 / num2)
+        if num2 == 0:
+            return "Error: Division by zero"
+        return num1 / num2
     else:
-        print("Unknown Input")
+        return f"Error: Invalid operation!!!"
 
-# still needs to be edited
