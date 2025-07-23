@@ -24,14 +24,17 @@ This project is part of my journey learning Python through the ALX Backend Engin
 ### Loops
 
 #### For Loops:
+
 - I used `for` loops to go through lists, strings, and other sequences.
 - I created examples where I printed items, calculated totals, and looped through characters.
 
 #### While Loops:
+
 - I learned how `while` loops work when I want something to run **as long as a condition stays true**.
 - I used it to build interactive loops and simulate processes that run until a stop condition is met.
 
 #### Nested Loops:
+
 - I practiced putting one loop inside another — great for creating patterns and working with multi-dimensional data like grids.
 
 ---
@@ -54,7 +57,7 @@ This project helped me understand the “thinking” part of a program — how i
 
 ## Tools I Used
 
-- Python 3.10+
+- Python 3.13+
 - VS Code
 - Git & GitHub
 
