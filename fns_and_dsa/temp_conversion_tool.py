@@ -17,7 +17,7 @@ def get_temperature_input():
         raise ValueError("Invalid temperature.Please enter a numeric value.")
 
 def get_unit_input():
-    unit = input("Is this temperature in Celsius or fahrenheit? (C/F): ").upper().strip()
+    unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").upper().strip()
     if unit not in ['C', 'F']:
         raise ValueError("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
     return unit
