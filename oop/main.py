@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
 
 from library_system import Book
-from library_system import Ebook
+from library_system import EBook
 from library_system import PrintBook
 from library_system import Library
 
@@ -21,7 +21,7 @@ def main():
     my_library = Library()
 
     classic_book = Book("Pride and Prejudice", "Jane Austen")
-    digital_novel = Ebook("Snow Crash", "Neal Stephenson", 500)
+    digital_novel = EBook("Snow Crash", "Neal Stephenson", 500)
     paper_novel = PrintBook("The Catcher in the Rye", "J.D. Salinger", 234)
 
     my_library.add_book(classic_book)
